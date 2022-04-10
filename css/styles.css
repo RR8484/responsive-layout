@@ -2,60 +2,77 @@
     box-sizing: border-box;
 }
 body {
-    margin: 0 auto;
+    margin: 0;
     max-width: 1024px;
-    background: #F5F5F5;
 }
 ul {
     list-style: none;
+    padding-left:0;
 }
-
-#header-wrapper {
-    display: flex;
-    justify-content: center;
-    
-}
-
-#title-item {
-    font-family: 'Cinzel', serif;
-    font-weight: 800;
-    align-self: center;
-    display: flex;
-    justify-content: center;
-}
-
-.topnav-links {
-    font-family: 'Cinzel', serif;
-    display: flex;
+a { 
     text-decoration: none;
-    width: 85%;
-    justify-content: center;
-    margin: .4rem;
-    margin-left: .1rem;
-    color: black;
-    font-weight: 600;
-    background-color: white;
-    padding: .2rem;
 }
-
-#intro {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+nav {
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    letter-spacing: .05em;
+    background: #F5F5F5;
+    padding: 25px;
 }
-#intro > img {
-    display: flex;
-    justify-content: center;
-    width: 65%;
-    align-self: center;
+#title {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
 }
-#intro > p {
-    align-self: center;
-    margin: 1.2rem;
+h1, .top-nav {
     text-align: center;
-    color: grey;
 }
-main {
+.top-nav, .top-nav li {
+    width: 100%;
+}
+h1 a, .top-nav a {
+    color: #000;
+  }
+.top-nav {
+    margin-top: 30px;
+}
+.top-nav li {
+    padding: 10px 0;
+    margin: 5px auto;
     background-color: white;
 }
 
+/* ===============
+    Media Queries
+    ============*/
+
+    @media (min-width:768px) {
+        .top-nav {
+        margin-top: 0;
+        }
+    .top-nav li {
+        display:inline-block;
+        width: auto;
+        margin-right:15px;
+        background-color:transparent;
+        }
+    .top-nav li:last-child {
+        margin-right: 0;
+        }
+    
+        .top-nav a {
+        color: black;
+        }
+    }
+
+    @media (min-width:1024px) {
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top-nav,
+        .top-nav li {
+            width:initial;
+            margin-bottom: 0;
+        }
+    }

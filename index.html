@@ -3,31 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <title>Document</title>
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header-wrapper">
-        <header>
-            <div id="title-item">
-                <h1 id="title">Ron Ritcey</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a class ="topnav-links" href="#">Home</a></li>
-                    <li><a class ="topnav-links" href="#">Portfolio</a></li>
-                    <li><a class ="topnav-links" href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div id="intro">
-                <img src="images/responsive-layout-profile.png" alt="Profile picture">
-                <p>Hi! I'm a front-end developer who loves responsive design and CSS. I am working through a Tech Degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
-            </div>
-        </header>
-    </div>
-    <main>
+    <nav>
+        <h1 id="title">Ron Ritcey</h1>
+        <ul class="top-nav">
+            <li><a class ="topnav-links" href="#">Home</a></li>
+            <li><a class ="topnav-links" href="#portfolio">Portfolio</a></li>
+            <li><a class ="topnav-links" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+        <div id="intro">
+            <img src="images/responsive-layout-profile.png" alt="Profile picture">
+            <p>Hi! I'm a front-end developer who loves responsive design and CSS. I am working through a Tech Degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+        </div>
+       
+    <main id="portfolio">
         <h2>Portfolio</h2>
         <div class="portfolio-wrapper">
             <img src="images/portfolio-1.png" alt="image of marketing page">
