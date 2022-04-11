@@ -16,7 +16,7 @@ nav {
     font-family: 'Cinzel', serif;
     font-weight: 500;
     letter-spacing: .05em;
-    background: #F5F5F5;
+    
     padding: 25px;
 }
 #title {
@@ -40,6 +40,23 @@ h1 a, .top-nav a {
     margin: 5px auto;
     background-color: white;
 }
+nav, #intro {
+    background: #F5F5F5;
+}
+#intro {
+    text-align: center;
+}
+#intro img {
+    width: 65%;
+    margin-top: 10px;
+}
+#intro p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 15px;
+    padding-bottom: 30px;
+    color:dimgrey;
+
+}
 
 /* ===============
     Media Queries
@@ -49,18 +66,37 @@ h1 a, .top-nav a {
         .top-nav {
         margin-top: 0;
         }
-    .top-nav li {
-        display:inline-block;
-        width: auto;
-        margin-right:15px;
-        background-color:transparent;
+        .top-nav li {
+            display:inline-block;
+            width: auto;
+            margin-right:15px;
+            background-color:transparent;
         }
-    .top-nav li:last-child {
-        margin-right: 0;
+        .top-nav li:last-child {
+            margin-right: 0;
         }
     
         .top-nav a {
-        color: black;
+            color: black;
+        }
+        #intro {
+            display: flex;
+            text-align: left;
+        }
+    
+        #intro img {
+            width: 45%;
+            order:2;
+            margin-right: 25px;
+            margin-bottom: 60px;
+        }
+        #intro p {
+            padding: 20px;
+            padding-top:0;
+            margin: 14px;
+            font-size: 1.2rem;
+            align-self: flex-start;
+            /* border: 2px solid rebeccapurple;*/
         }
     }
 
@@ -75,4 +111,10 @@ h1 a, .top-nav a {
             width:initial;
             margin-bottom: 0;
         }
+        #intro {
+            display: flex;
+            font-size: 1.2rem;
+            text-align: left;
+        }
+    
     }
