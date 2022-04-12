@@ -6,20 +6,6 @@
 body {
     max-width: 1024px;
 }
-/*body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    background-color: #093145;
-}
-    */
-
-ul {
-    list-style: none;
-    padding-left:0;
-}
 a { 
     text-decoration: none;
 }
@@ -80,6 +66,8 @@ h1 a, .top-nav a {
     padding: 10px 0;
     margin: 5px auto;
     background-color: white;
+    list-style: none;
+    padding-left:0;
 }
 nav, #intro {
     background: #F5F5F5;
@@ -100,6 +88,72 @@ nav, #intro {
 .footer-nav {
     display: flex;
 }
+#contact-wrapper {
+    background: #F5F5F5;
+    margin:0;
+    margin-top: 50px;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid gainsboro;
+}
+#contact-wrapper h3 {
+    font-family: 'Cinzel', serif;
+    letter-spacing: .05em;
+    font-weight: 500;
+    text-align: center;
+    padding: 4px;
+    padding-top: 3rem;
+}
+#contact-wrapper p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 15px;
+    text-align: center;
+    padding: 4px;
+    margin: 1rem;
+    color:dimgrey;
+}
+span {
+    font-weight: bold;
+    color: dimgrey;
+}
+ul, li  {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+/* I could not get rid of the bullet points in the footer <ul> on Chrome for some reason. Just Firefox. I turned them white as a workaround, I hope thats okay!*/
+::marker {
+    color: white;
+}
+.top a, .full a {
+    padding: 0;
+    margin:0;
+}
+/*.foot-wrapper {
+    display: flex;
+    width:100%;
+}*/
+footer {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 100px;
+    background: #F5F5F5;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    letter-spacing: .05em;
+    font-size:.6rem;
+    margin-top: auto;
+}
+footer 
+.full {
+    display:none;
+}
+
+
+
+
+
 
 
 /* ===============
