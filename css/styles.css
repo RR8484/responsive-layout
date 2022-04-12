@@ -6,6 +6,16 @@
 body {
     max-width: 1024px;
 }
+/*body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color: #093145;
+}
+    */
+
 ul {
     list-style: none;
     padding-left:0;
@@ -86,8 +96,11 @@ nav, #intro {
     margin: 15px;
     padding-bottom: 30px;
     color:dimgrey;
-
 }
+.footer-nav {
+    display: flex;
+}
+
 
 /* ===============
     Media Queries
@@ -152,6 +165,9 @@ nav, #intro {
             display: flex;
             font-size: 1.2rem;
             text-align: left;
+        }
+        .col {
+            flex-basis: calc(33.333% - 20px);
         }
     
     }
