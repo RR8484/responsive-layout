@@ -19,6 +19,7 @@ nav {
 #title {
     font-family: 'Cinzel', serif;
     font-weight: 700;
+    color:darkgreen;
 }
 #portfolio {
     font-family: 'Cinzel', serif;
@@ -133,11 +134,16 @@ ul, li  {
     font-weight: 600;
     text-align: center;
 }
-.skills h3 {
+#contact-wrapper p {
+    text-align: center;
+    font-size: 1.3rem;
+}
+#skills h3 {
     font-family: 'Cinzel', serif;
     letter-spacing: .05em;
     font-weight: 600;
     text-align: center;
+    margin:0;
     margin-bottom: 1.4rem;
 }
 ol {
@@ -169,6 +175,9 @@ footer {
 footer 
 .full {
     display:none;
+}
+footer h3 {
+    color: darkgreen;
 }
 
 
@@ -231,6 +240,15 @@ footer
             display: inline-block;
             margin-left: 20px;
             color: black;
+            font-size: 1.17em;
+        }
+        .skills-list {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.4rem;
+        }
+        .skills-list li {
+            padding: 1.4rem;
         }
     }
 
@@ -252,6 +270,13 @@ footer
         }
         .col {
             flex-basis: calc(33.333% - 20px);
+        }
+        .skills-list {
+            display:flex;
+            justify-content:flex-start;
+        }
+        .skills-list li {
+            flex-grow: 2;
         }
     
     }
