@@ -23,7 +23,7 @@ nav {
 #portfolio {
     font-family: 'Cinzel', serif;
     letter-spacing: .05em;
-    font-weight: 500;
+    font-weight: 600;
     padding: 30px;
     text-align: center;
 
@@ -32,7 +32,7 @@ nav {
     max-width: 1100px;
     padding: 10px;
     margin: 0 auto;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Lora', serif;
 }
 .col {
     padding-top: 5px;
@@ -80,7 +80,8 @@ nav, #intro {
     margin-top: 10px;
 }
 #intro p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Lora', serif;
+    font-size: .7rem;
     margin: 15px;
     padding-bottom: 30px;
     color:dimgrey;
@@ -91,21 +92,19 @@ nav, #intro {
 #contact-wrapper {
     background: #F5F5F5;
     margin:0;
-    margin-top: 50px;
     padding-bottom: 3rem;
     border-bottom: 2px solid gainsboro;
 }
 #contact-wrapper h3 {
     font-family: 'Cinzel', serif;
     letter-spacing: .05em;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     padding: 4px;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 #contact-wrapper p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 15px;
+    font-family: 'Lora', serif;
     text-align: center;
     padding: 4px;
     margin: 1rem;
@@ -128,10 +127,32 @@ ul, li  {
     padding: 0;
     margin:0;
 }
-/*.foot-wrapper {
-    display: flex;
-    width:100%;
-}*/
+#contact {
+    font-family: 'Cinzel', serif;
+    letter-spacing: .05em;
+    font-weight: 600;
+    text-align: center;
+}
+.skills h3 {
+    font-family: 'Cinzel', serif;
+    letter-spacing: .05em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.4rem;
+}
+ol {
+    font-family: 'Lora', serif;
+    text-align: center;
+}
+ol li {
+    padding: .4rem;
+    background-color:paleturquoise;
+    margin-bottom: 0;
+    
+}
+ol li:nth-child(odd) {
+    background-color: #F5F5F5;
+}
 footer {
     display:flex;
     justify-content: space-between;
@@ -202,6 +223,15 @@ footer
         .col {
             flex-basis: calc(50% - 20px);
           }
+        .top {
+            display:none;
+            margin-left: 20px;
+        }
+        footer .full {
+            display: inline-block;
+            margin-left: 20px;
+            color: black;
+        }
     }
 
     @media (min-width:1024px) {
